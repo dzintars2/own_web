@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Page with a Conscience</title>
+    <style>
+        /* Minimal CSS */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #212529;
+                color: #f8f9fa;
+            }
+            a { color: #4dabf7; }
+        }
+
+        .content {
+            max-width: 600px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 0.9; }
+        }
+
+        a {
+            color: #1864ab;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+        }
+
+        .small {
+            font-size: 0.875rem;
+            opacity: 0.7;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>📭 This space intentionally left blank.</p>
+        <p>If you found your way here, consider supporting<br>
+        <a href="https://ziedot.lv/en" target="_blank" rel="noopener">Ziedot.lv</a> or 
+        <a href="https://www.bsf.lv/en/" target="_blank" rel="noopener">Latvia - Children's Hospital</a>
+        instead.</p>
+        
+        <p class="small">
+            (This domain is used exclusively for email.<br>
+            No trackers, cookies, or analytics used.)
+        </p>
+    </div>
+</body>
+</html>
